@@ -1,0 +1,183 @@
+ :root {
+            --primary: #202d70;
+            --text: #18254f;
+            --muted: #68738a;
+            --border: #e1e5ec;
+            --background: #f7f8fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+
+        .top-navbar {
+            height: 78px;
+            background: white;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            font-size: 29px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .brand span {
+            color: #64ad54;
+        }
+
+        .portal-title {
+            border-left: 1px solid var(--border);
+            padding-left: 24px;
+            margin-left: 24px;
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        .website-btn {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background: white;
+            padding: 10px 17px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Dashboard wrapper */
+
+        .dashboard-wrapper {
+            display: flex;
+            min-height: calc(100vh - 78px);
+        }
+
+        /* Sidebar */
+
+        .sidebar {
+            width: 250px;
+            min-width: 250px;
+            background: white;
+            border-right: 1px solid var(--border);
+            padding: 28px 12px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            padding: 15px 20px;
+            color: #34415d;
+            text-decoration: none;
+            border-radius: 9px;
+            margin-bottom: 7px;
+        }
+
+        .sidebar-link i {
+            font-size: 22px;
+        }
+
+        .sidebar-link:hover,
+        .sidebar-link.active {
+            background: #eef8ec;
+            color: #398b36;
+        }
+
+        .sidebar-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        /* Main content */
+
+        .main-content {
+            flex: 1;
+            min-width: 0;
+            padding: 30px;
+        }
+
+        /* Footer */
+
+        .admin-footer {
+            padding: 18px 30px;
+            text-align: center;
+            color: var(--muted);
+            background: white;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
+
+        @media(max-width: 767px) {
+
+            .top-navbar {
+                height: 65px;
+                padding: 0 15px;
+            }
+
+            .brand {
+                font-size: 21px;
+            }
+
+            .portal-title,
+            .website-btn {
+                display: none;
+            }
+
+            .dashboard-wrapper {
+                display: block;
+            }
+
+            .sidebar {
+                width: 100%;
+                min-width: 100%;
+                padding: 10px;
+                flex-direction: row;
+                overflow-x: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .sidebar-link {
+                padding: 10px 13px;
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+            .sidebar-bottom {
+                display: none;
+            }
+
+            .main-content {
+                padding: 17px 12px;
+            }
+        }

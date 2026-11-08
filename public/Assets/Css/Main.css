@@ -1,0 +1,135 @@
+.mainColor {
+    background-color: #f7f7f7;
+}
+.maintextcolor{
+    color: #272e69;
+}
+
+.bluebgcolor{
+    background-color: #272e69;
+}
+
+.blueborder{
+    border: 2px solid #272e69;
+}
+.white-text{
+    color:white;
+}
+
+.greencolor{
+    color:#68b438;
+}
+
+.bgGreen{
+    background-color:#68b438;
+}
+
+a{
+   color: #272e69;
+}
+
+.mainbanner{
+    background-image: url("../Images/banner.png");
+    background-size: cover;
+    padding-top:8rem;
+    padding-bottom:8rem;
+    background-position: right;
+}
+.separator{
+    background-color: #bababa;
+    width:4px;
+}
+
+.afooter{
+    background-image: url("../Images/footer.png");
+    background-size: cover;
+    padding-top:4rem;
+    padding-bottom:4rem;
+    background-position: center;
+}
+
+.nohoverr:hover{
+    background-color: white;
+}
+
+.verylightgreencolor{
+    background-color: #f2f8f4;
+}
+.lightgreencolor{
+    background-color:#def0d5;
+}
+
+.width60{
+    width:60%;
+}
+
+.greenline:after{content:'';display:block;width:46px;height:3px;background:#4c9f38;margin-top:20px}
+.greenlinecenter:after{content:'';display:block;width:46px;height:3px;background:#4c9f38;margin-top:20px
+;margin-left: auto;;margin-right: auto;
+}
+ .lightgreenabout{
+    background-color: #f2f8f4;
+ }
+.card {
+    background-color: transparent;
+}
+.login-role-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.login-role-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 5px solid currentColor;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.userloginform{
+background-color: white;
+width:30%;
+}
+
+.usersignupform{
+background-color: white;
+width:40%;
+}
+
+.loginformcolor{
+     background-color: #f3f8f4;
+}
+
+.loginborder{
+         border-radius: 10px;
+         border: 10px solid #dddddd;
+}
+
+.listgreendots{
+  list-style: disc;
+}
+.listgreendots li::marker {
+    color: #3DAE53;
+}
+
+.service-image {
+    width: 65%;
+    height: auto;
+}
+
+.width300{
+    width:350px;
+    margin-right:auto;
+}
+
+@media (min-width: 1020px) and (max-width: 1200px) {
+  .width300{
+ width:250px;
+    margin-right:auto;
+  }
+}
